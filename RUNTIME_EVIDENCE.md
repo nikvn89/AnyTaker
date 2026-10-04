@@ -9,12 +9,30 @@ Every row: wallet, method, exact input, expected, tx hash, execution result, pos
 Project contract: [`0x61FCCA87768B60698ed714BCD77F4273e1001dEb`](https://explorer-studio.genlayer.com/address/0x61FCCA87768B60698ed714BCD77F4273e1001dEb) — the same frozen source deployed again at its own address (not the Intelligent
 Contract address). Deploy tx `0x8fa21afa4c2dd511a18a294e36c59f8ce86fd879c1b5a3b234cd0def3f21d964` (SUCCESS).
 
-| # | Wallet | Action in the app | Expected | Tx hash | Status |
-|---|---|---|---|---|---|
-| 1 | author | Open Y1 | `UNRESTRICTED`, `ANYONE`, OPEN | — | NOT RUN |
-| 4 | author | Open N1 | `RESTRICTED`, `ADDRESSEE`, OPEN | — | NOT RUN |
-| 2 | stranger | Accept Y1, note `On it` | taker = stranger, accepted by someone not named in this offer | — | NOT RUN |
-| 6 | addressee | Accept N1, note `Accepted` | taker = addressee, accepted by the addressee | — | NOT RUN |
+Run date 2026-10-04, through the live app with MetaMask. Every success below was reported by the app only after the
+leader receipt said SUCCESS and the reloaded accepted state showed the change.
+
+Wallets: author `0x6276095FAEA15108740445ff277fdA8c304657F4` · addressee `0x037f58E33c1Ec8fdA272361E0aAC1e31054a1CDE` ·
+stranger `0x146e44881d35814bA582D265AF5b97ef2695ec8e` (entered in no field).
+
+| # | Wallet | Action in the app | Expected | Tx hash | Result | Status |
+|---|---|---|---|---|---|---|
+| 1 | author | Open Y1 (`Whoever finishes the translation first will be paid for it.`) | `UNRESTRICTED`, `ANYONE`, OPEN | `0xb831a255701d0208a6a02f9c546fac9a25be4a2869af49a4fed38c04d5c1de9a` | SUCCESS; card *Open to anyone*, reading UNRESTRICTED | PASS |
+| 4 | author | Open N1 (`If you finish the translation first, you will be paid for it.`) | `RESTRICTED`, `ADDRESSEE`, OPEN | `0x2172b51db4c99f4858fcc6572ffb1ad0370a10a22c37d33c8024ddd477b94d11` | SUCCESS; card *Addressed*, reading RESTRICTED | PASS |
+| 2 | stranger | Accept Y1, note `On it` | taker = stranger | `0x315fb8282329b10698ee67e0fd66eab7a3689050e44b9a41a9e505532e174a3c` | SUCCESS; *accepted by someone not named in this offer*, taker `0x146e44881d35814ba582d265af5b97ef2695ec8e` | PASS |
+| 6 | addressee | Accept N1, note `Accepted` | taker = addressee | `0xf0801989272aac250f626f13d4ec6eafca3896ee7e11bc17ae9707f078db2e63` | SUCCESS; *accepted by the addressee*, taker `0x037f58e33c1ec8fda272361e0aac1e31054a1cde` | PASS |
+
+Offer ids (author `0x6276…57f4`): Y1 `026945bf4cad49e9fd0227adc3f25d30613f45a43ec0bca057b887d686ef21d0` ·
+N1 `02d6afb04636202e839c634de7d7ca94da37d8cc518bf4ff1f9ec2834330eae0`.
+
+### Screenshots
+
+| # | File | What it shows |
+|---|---|---|
+| 1 | `docs/evidence/1-stranger-side-by-side.png` | stranger connected, both offers OPEN, both cards *not named in this offer*, note typed on both: Accept **enabled** on Y1, **disabled** on N1 with *"This was made to the addressee alone"* |
+| 2 | `docs/evidence/2-after-acceptance.png` | after both acceptances: Y1 *accepted by someone not named in this offer* with the stranger's full address; N1 *accepted by the addressee* |
+| 3 | `docs/evidence/3-addressee-already-accepted.png` | addressee connected, note typed on Y1: Accept disabled with *"This has already been accepted"* |
+| — | `docs/evidence/4-stranger-took-y1.png` | the stranger's view right after its acceptance, with the app's success line and tx hash |
 
 Calls the app already knows will revert are not sent: the button is disabled with the contract's sentence, and the
 proof is a screenshot, not a hash.

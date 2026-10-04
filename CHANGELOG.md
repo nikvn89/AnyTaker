@@ -7,3 +7,5 @@
 - AnyTaker app: offers (load any id without a wallet), open an offer, side-by-side view with the same connected
   wallet, role badge, Accept and Withdraw buttons disabled with the contract's own sentences, live calldata meter,
   receipt rule and postcondition checks.
+- Project deployment of the same frozen source at its own address; 4 transactions through the app with three wallets
+  and 3 screenshots, all as expected.

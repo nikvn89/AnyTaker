@@ -31,6 +31,8 @@ from the addressee.
 
 ## What the app shows
 
+![The same stranger wallet: Accept enabled on one offer, disabled on the other](docs/evidence/1-stranger-side-by-side.png)
+
 - **A reach line** under the offer text: *Anyone except the author may accept; the first to accept takes it* or
   *Only the addressee may accept*.
 - **The connected wallet's role** on each offer: `author`, `addressee` or `not named in this offer`.
@@ -43,6 +45,8 @@ from the addressee.
 - The id of a new offer is computed locally and shown before sending; the app checks the accepted state first and
   never sends a duplicate. Success is reported only after the leader receipt says SUCCESS and the reloaded state
   shows the change. A live meter blocks calldata over 255 bytes.
+
+![After acceptance: a stranger took one offer, the addressee took the other](docs/evidence/2-after-acceptance.png)
 
 ## How to try it
 
