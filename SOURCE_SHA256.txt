@@ -1,0 +1,1 @@
+94db20972d07ecc12b502e96f7635ccd99c1c73fb329220d80a4fc701320973d  contracts/OfferScope.py

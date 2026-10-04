@@ -1,0 +1,59 @@
+{
+  "author": "0x3065e31b1d993d7c0d59e6786844cba56780b2d3",
+  "offers": [
+    {
+      "text": "Whoever finishes the translation first will be paid for it.",
+      "normalized": "Whoever finishes the translation first will be paid for it.",
+      "py_len": 59,
+      "offer_id": "64567f4497ea8b243e6dfebcbe6a03cf8899d44f60252d8fb97620eed9801f29"
+    },
+    {
+      "text": "If you finish the translation first, you will be paid for it.",
+      "normalized": "If you finish the translation first, you will be paid for it.",
+      "py_len": 61,
+      "offer_id": "1fed2255383c1b41d97b8e7c67ec12fa26e724f7e9c98c1d8493520ebf3bdc1e"
+    },
+    {
+      "text": "The fee goes to whoever completes the task, not just to you.",
+      "normalized": "The fee goes to whoever completes the task, not just to you.",
+      "py_len": 60,
+      "offer_id": "e70097df1d26e23368c86d25fb0f9aab426125726512ff4220a851c31dc3d0b6"
+    },
+    {
+      "text": "The fee goes to you alone if you complete the task.",
+      "normalized": "The fee goes to you alone if you complete the task.",
+      "py_len": 51,
+      "offer_id": "f23b67fcd883f0c928bc16c74341254e034d5cf8ac0a2049aed402ecda8cf410"
+    },
+    {
+      "text": "  Anybody who reads\tthis\nmay take it up.  ",
+      "normalized": "Anybody who reads this may take it up.",
+      "py_len": 38,
+      "offer_id": "f67efb96755620d523eba36ba8aca159712b8b548f163a436d3a88921b19abcc"
+    },
+    {
+      "text": "\u001cWe will pay you if you complete the audit.\u001f",
+      "normalized": "We will pay you if you complete the audit.",
+      "py_len": 42,
+      "offer_id": "9d4f48b4150b8f684691b827490c299245d2f8a15250d992ba3110994a2d7b4c"
+    },
+    {
+      "text": "Anyperson\u001dwho delivers\u001ethe parts.",
+      "normalized": "Any person who delivers the parts.",
+      "py_len": 34,
+      "offer_id": "64287cb5f1bf20b263c613492b251aef0181699e86ae0d14b3032c8fe735f603"
+    },
+    {
+      "text": "﻿The offer stands.",
+      "normalized": "﻿The offer stands.",
+      "py_len": 18,
+      "offer_id": "6ea90ffd7d979fcfb562e8bac03b208c4c0e01f7f5ce6407b1e0472a7aec85e0"
+    },
+    {
+      "text": "Offre ouverte — à quiconque　termine. 📨",
+      "normalized": "Offre ouverte — à quiconque termine. 📨",
+      "py_len": 38,
+      "offer_id": "5b8697ceaa485812245830b1311f2bafc65bad27353173af878ac3aa24dd3318"
+    }
+  ]
+}
